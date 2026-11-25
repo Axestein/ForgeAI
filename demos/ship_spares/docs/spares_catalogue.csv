@@ -1,0 +1,31 @@
+part_number,description,category,unit,unit_price_usd,lead_time_days,supplier_code,stock_status,min_order_qty,notes
+SS-001,Stainless Steel Propeller Shaft 60mm,Propulsion,piece,1250.00,21,SUP-A,In Stock,1,Marine grade 316L SS
+SS-002,Bronze Propeller 4-blade 24 inch,Propulsion,piece,3200.00,35,SUP-B,In Stock,1,For vessels up to 500 HP
+SS-003,Rubber Shaft Seal Kit,Propulsion,kit,180.00,7,SUP-A,In Stock,5,Includes all O-rings
+SS-004,Stern Tube Bearing (Cutlass),Propulsion,piece,95.00,10,SUP-C,In Stock,2,Rubber bearing standard size
+SS-005,Propeller Shaft Coupling 60mm,Propulsion,piece,420.00,14,SUP-A,In Stock,1,Rigid type
+EL-001,Marine Alternator 24V 120A,Electrical,piece,580.00,14,SUP-D,In Stock,1,Leece-Neville compatible
+EL-002,Battery Bank 200Ah AGM,Electrical,piece,340.00,7,SUP-D,In Stock,2,Sealed AGM 12V
+EL-003,Marine Circuit Breaker 50A,Electrical,piece,45.00,5,SUP-D,In Stock,10,ABYC rated
+EL-004,Shore Power Inlet 32A 3-phase,Electrical,piece,290.00,10,SUP-D,In Stock,2,IP66 rated
+EL-005,LED Navigation Light Set,Electrical,set,185.00,7,SUP-D,In Stock,1,COLREGS compliant
+HU-001,Marine Grade Epoxy Primer 20L,Hull,drum,210.00,5,SUP-E,In Stock,1,Anti-corrosion primer
+HU-002,Anti-fouling Paint 20L,Hull,drum,320.00,5,SUP-E,In Stock,1,Copper-based, below waterline
+HU-003,Zinc Anode Hull Plate 3kg,Hull,piece,28.00,3,SUP-E,In Stock,10,Sacrificial anode
+HU-004,Fiberglass Repair Kit,Hull,kit,65.00,3,SUP-E,In Stock,5,Includes resin and cloth
+HU-005,Marine Sealant 300ml Tube,Hull,tube,18.00,2,SUP-E,In Stock,20,UV resistant silicone
+EN-001,Main Engine Fuel Filter,Engine,piece,42.00,5,SUP-F,In Stock,5,Universal diesel filter
+EN-002,Engine Oil Filter,Engine,piece,28.00,3,SUP-F,In Stock,10,Spin-on type
+EN-003,Fresh Water Pump 24V,Engine,piece,310.00,14,SUP-F,In Stock,2,Centrifugal, 50L/min
+EN-004,Heat Exchanger Zinc Anode,Engine,piece,22.00,3,SUP-F,In Stock,20,Sacrificial, standard thread
+EN-005,Engine Impeller Kit,Engine,kit,85.00,5,SUP-F,In Stock,5,Nitrile rubber
+NA-001,GPS Chart Plotter 12 inch,Navigation,piece,1850.00,21,SUP-G,Limited Stock,1,NMEA 2000 compatible
+NA-002,VHF Marine Radio DSC,Navigation,piece,420.00,14,SUP-G,In Stock,1,GMDSS approved
+NA-003,Radar Dome 25kW,Navigation,piece,4200.00,45,SUP-G,On Order,1,X-band, 72nm range
+NA-004,AIS Transponder Class B,Navigation,piece,680.00,21,SUP-G,In Stock,1,SOTDMA type
+NA-005,Compass Binnacle,Navigation,piece,350.00,14,SUP-G,In Stock,1,Fluxgate digital
+SA-001,Life Raft 10-person SOLAS,Safety,piece,3800.00,30,SUP-H,In Stock,1,SOLAS A-pack, 3-year service
+SA-002,EPIRB 406MHz,Safety,piece,850.00,14,SUP-H,In Stock,1,Self-activating, hydrostatic release
+SA-003,Immersion Suit Size L,Safety,piece,480.00,14,SUP-H,In Stock,5,SOLAS approved
+SA-004,Fire Extinguisher 9kg CO2,Safety,piece,145.00,7,SUP-H,In Stock,5,Marine approved
+SA-005,Lifebuoy SOLAS 2.5kg,Safety,piece,65.00,5,SUP-H,In Stock,10,With lights and line

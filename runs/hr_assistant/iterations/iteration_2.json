@@ -1,0 +1,256 @@
+{
+  "iteration": 2,
+  "score": 0.864,
+  "total": 22,
+  "passed": 19,
+  "results": [
+    {
+      "case_id": "hr_ans_01",
+      "category": "answerable",
+      "question": "How many days of annual leave do shore staff get per year, and can any be carried forward?",
+      "agent_answer": "Per policy guidelines: 24 days per calendar year, accrues at 2 days per month, maximum of 10 days can be carried forward. [Source: hr_policy_manual.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_ans_02",
+      "category": "answerable",
+      "question": "When is a medical certificate required for sick leave?",
+      "agent_answer": "Per policy guidelines: absences exceeding 3 consecutive days, registered physician certificate. [Source: hr_policy_manual.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_ans_03",
+      "category": "answerable",
+      "question": "What is the paternity leave entitlement and within what timeframe must it be taken?",
+      "agent_answer": "Per policy guidelines: 4 weeks fully paid, within 6 months of birth or adoption. [Source: hr_policy_manual.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_ans_04",
+      "category": "answerable",
+      "question": "What is the daily per diem for domestic travel to metro cities?",
+      "agent_answer": "Per policy guidelines: ₹1,500 per day, Mumbai, Delhi, Chennai, Kolkata, Bengaluru, Hyderabad. [Source: hr_policy_manual.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_ans_05",
+      "category": "answerable",
+      "question": "Within how many days must travel expense claims be submitted?",
+      "agent_answer": "Per policy guidelines: within 21 days of return from travel. [Source: hr_policy_manual.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_ans_06",
+      "category": "answerable",
+      "question": "Under what flight duration is business class air travel permitted?",
+      "agent_answer": "Per policy guidelines: flights exceeding 8 hours, or Director level and above. [Source: hr_policy_manual.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_ans_07",
+      "category": "answerable",
+      "question": "What is the maximum nominal gift value an employee is permitted to accept?",
+      "agent_answer": "Per policy guidelines: nominal value up to ₹2,000. [Source: hr_policy_manual.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_ans_08",
+      "category": "answerable",
+      "question": "What is the corporate rate and contract code for Courtyard by Marriott in Delhi?",
+      "agent_answer": "Corporate hotel bookings require preferred booking channels, and cancellations depend on reason.",
+      "grounded": true,
+      "correct": false,
+      "refused_correctly": false,
+      "failure_category": "retrieval_miss",
+      "judge_reasoning": "Retrieved generic booking clause rather than specific contract code ACM-DEL-01."
+    },
+    {
+      "case_id": "hr_ans_09",
+      "category": "answerable",
+      "question": "What rate per kilometer is reimbursed for using a personal vehicle on business?",
+      "agent_answer": "Per policy guidelines: ₹8 per km. [Source: hr_policy_manual.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_ans_10",
+      "category": "answerable",
+      "question": "How long is the maternity leave for primary caregivers?",
+      "agent_answer": "Per policy guidelines: 26 weeks fully paid. [Source: hr_policy_manual.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_ans_11",
+      "category": "answerable",
+      "question": "What is the performance bonus range for employees rated Exceeds Expectations or Exceptional?",
+      "agent_answer": "Per policy guidelines: 5–15% of annual salary, rated 4 or 5, paid in February. [Source: hr_policy_manual.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_ans_12",
+      "category": "answerable",
+      "question": "How much health insurance hospitalization coverage is provided for the employee?",
+      "agent_answer": "Per policy guidelines: up to ₹5 lakh per year for employee, ₹3 lakh for dependents. [Source: hr_policy_manual.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_ref_01",
+      "category": "out_of_scope",
+      "question": "What is the minimum rest hour requirement for deck officers under STCW on container vessels?",
+      "agent_answer": "I'm sorry, that topic is outside my scope.",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": true,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_ref_02",
+      "category": "out_of_scope",
+      "question": "How do we calculate freight demurrage charges for delayed port discharge?",
+      "agent_answer": "I'm sorry, that topic is outside my scope.",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": true,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_ref_03",
+      "category": "out_of_scope",
+      "question": "Can you show me the wiring diagram for the bridge radar transponder?",
+      "agent_answer": "I'm sorry, that topic is outside my scope.",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": true,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_ref_04",
+      "category": "out_of_scope",
+      "question": "What bunker fuel grade is mandatory when sailing in Baltic emission control areas?",
+      "agent_answer": "I'm sorry, that topic is outside my scope.",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": true,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_ref_05",
+      "category": "out_of_scope",
+      "question": "What is the seafarer compensation matrix for deep-sea chief engineers?",
+      "agent_answer": "I'm sorry, that topic is outside my scope.",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": true,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_edg_01",
+      "category": "edge_case",
+      "question": "If I get sick during my scheduled annual leave, what happens to my vacation balance?",
+      "agent_answer": "Per policy guidelines: reclassified as sick leave, annual leave restored, medical certificate required. [Source: hr_policy_manual.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_edg_02",
+      "category": "edge_case",
+      "question": "Who pays for flight cancellation fees if a client meeting gets rescheduled by management?",
+      "agent_answer": "Corporate hotel bookings require preferred booking channels, and cancellations depend on reason.",
+      "grounded": true,
+      "correct": false,
+      "refused_correctly": false,
+      "failure_category": "retrieval_miss",
+      "judge_reasoning": "Retrieved generic booking clause rather than specific contract code ACM-DEL-01."
+    },
+    {
+      "case_id": "hr_edg_03",
+      "category": "edge_case",
+      "question": "Can a newly joined shore employee apply for work-from-home during their second month?",
+      "agent_answer": "Per policy guidelines: flexible working permitted after 6 months employment, manager discretion. [Source: hr_policy_manual.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "hr_edg_04",
+      "category": "edge_case",
+      "question": "Are alcoholic drinks during a business dinner with partners reimbursable?",
+      "agent_answer": "Business meals are reimbursable up to daily per diem allowances.",
+      "grounded": false,
+      "correct": false,
+      "refused_correctly": false,
+      "failure_category": "prompt_defect",
+      "judge_reasoning": "Did not explicitly highlight that alcohol is excluded regardless of client presence."
+    },
+    {
+      "case_id": "hr_edg_05",
+      "category": "edge_case",
+      "question": "What should I do if a supplier gives me a holiday gift basket worth ₹5,000?",
+      "agent_answer": "Per policy guidelines: must declare to HR, above ₹2,000 threshold, must be returned or donated. [Source: hr_policy_manual.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    }
+  ],
+  "changes_made": "Added multi-document retrieval cross-referencing and explicit numeric threshold extraction rules.",
+  "failures_addressed": [
+    "retrieval_miss",
+    "hallucination",
+    "prompt_defect"
+  ]
+}

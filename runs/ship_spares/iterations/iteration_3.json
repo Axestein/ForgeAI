@@ -1,0 +1,254 @@
+{
+  "iteration": 3,
+  "score": 0.909,
+  "total": 22,
+  "passed": 20,
+  "results": [
+    {
+      "case_id": "sp_ans_01",
+      "category": "answerable",
+      "question": "What is the price, lead time, and supplier code for part number SS-001?",
+      "agent_answer": "Per maritime documentation: 1250.00 USD, 21 days lead time, SUP-A (OceanTech Marine Parts), Stainless Steel Propeller Shaft 60mm. [Source: spares_catalogue.csv]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_ans_02",
+      "category": "answerable",
+      "question": "Who has the authority to approve a spare parts order valued at $18,000 USD?",
+      "agent_answer": "Per maritime documentation: Fleet Manager, $5,001 to $25,000 threshold. [Source: procurement_policy.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_ans_03",
+      "category": "answerable",
+      "question": "What are the payment terms and currency for supplier SUP-B (PropellerCo)?",
+      "agent_answer": "Per maritime documentation: 50% advance, 50% on delivery, USD. [Source: procurement_policy.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_ans_04",
+      "category": "answerable",
+      "question": "How frequently should marine engine fuel filters be replaced?",
+      "agent_answer": "Per maritime documentation: every 250 operating hours. [Source: technical_specs.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_ans_05",
+      "category": "answerable",
+      "question": "What is the unit price and minimum order quantity for part EN-004 (Heat Exchanger Zinc Anode)?",
+      "agent_answer": "Per maritime documentation: 22.00 USD, min order qty 20. [Source: spares_catalogue.csv]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_ans_06",
+      "category": "answerable",
+      "question": "When must hull zinc anodes be replaced according to technical specifications?",
+      "agent_answer": "Inspect zinc anodes every 6 months and replace when consumed to 50% mass. [Source: technical_specs.md]",
+      "grounded": true,
+      "correct": false,
+      "refused_correctly": false,
+      "failure_category": "prompt_defect",
+      "judge_reasoning": "Omitted the accelerated 3-month inspection cycle for tropical water operations."
+    },
+    {
+      "case_id": "sp_ans_07",
+      "category": "answerable",
+      "question": "What is the standard warranty period for purchased maritime spares?",
+      "agent_answer": "Per maritime documentation: 12 months from installation, 18 months from delivery. [Source: procurement_policy.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_ans_08",
+      "category": "answerable",
+      "question": "What type of airfreight surcharge is pre-approved for emergency breakdown spare orders?",
+      "agent_answer": "Per maritime documentation: 25–40% of part cost pre-approved. [Source: procurement_policy.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_ans_09",
+      "category": "answerable",
+      "question": "What is the required battery replacement interval for service AGM battery banks?",
+      "agent_answer": "Per maritime documentation: inspected quarterly, replaced every 5 years. [Source: technical_specs.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_ans_10",
+      "category": "answerable",
+      "question": "What is the overhaul interval for a 10-person SOLAS life raft?",
+      "agent_answer": "Per maritime documentation: annual inspection, 3-year overhaul cycle. [Source: technical_specs.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_ans_11",
+      "category": "answerable",
+      "question": "How much notice is required to coordinate spare deliveries with a port agent at remote ports?",
+      "agent_answer": "Per maritime documentation: 10 days notice for remote ports, 5 days for standard ports. [Source: procurement_policy.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_ans_12",
+      "category": "answerable",
+      "question": "What is the price and specification for part NA-002?",
+      "agent_answer": "Per maritime documentation: 420.00 USD, VHF Marine Radio DSC, GMDSS approved, lead time 14 days. [Source: spares_catalogue.csv]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_ref_01",
+      "category": "out_of_scope",
+      "question": "How many days of paid maternity leave are granted to shore-based HR staff?",
+      "agent_answer": "I'm sorry, that topic is outside my scope.",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": true,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_ref_02",
+      "category": "out_of_scope",
+      "question": "What is the daily charter hire rate for a Capesize bulk carrier in the Atlantic?",
+      "agent_answer": "I'm sorry, that topic is outside my scope.",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": true,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_ref_03",
+      "category": "out_of_scope",
+      "question": "Can you calculate the personal income tax withholding for Indian deck ratings?",
+      "agent_answer": "I'm sorry, that topic is outside my scope.",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": true,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_ref_04",
+      "category": "out_of_scope",
+      "question": "What is Acme Corp's corporate dental reimbursement limit for administrative employees?",
+      "agent_answer": "I'm sorry, that topic is outside my scope.",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": true,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_ref_05",
+      "category": "out_of_scope",
+      "question": "What is the current stock price and dividend yield of Mediterranean Shipping Company?",
+      "agent_answer": "I'm sorry, that topic is outside my scope.",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": true,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_edg_01",
+      "category": "edge_case",
+      "question": "If an emergency order of 5 rubber shaft seal kits (SS-003) is needed urgently, what is the base cost and who can approve it?",
+      "agent_answer": "Per maritime documentation: $900 USD total base cost (5 x $180), Vessel Master + Shore Superintendent approval ($500-$5,000 tier). [Source: spares_catalogue.csv]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_edg_02",
+      "category": "edge_case",
+      "question": "Can we use non-OEM replacement engine parts on our main diesel engines?",
+      "agent_answer": "Per maritime documentation: requires technical approval from fleet Classification Society, OEM preferred. [Source: procurement_policy.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_edg_03",
+      "category": "edge_case",
+      "question": "How often must Type-A rubber lip shaft seals be replaced versus Type-B mechanical seals?",
+      "agent_answer": "Per maritime documentation: Type-A: every 3 years or 6,000 hours, Type-B: every 5 years or at dry-dock. [Source: technical_specs.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_edg_04",
+      "category": "edge_case",
+      "question": "Is an emergency purchase under $500 permitted without an advance Purchase Order?",
+      "agent_answer": "Per maritime documentation: permitted for emergency purchases under $500, must be ratified within 48 hours. [Source: procurement_policy.md]",
+      "grounded": true,
+      "correct": true,
+      "refused_correctly": false,
+      "failure_category": null,
+      "judge_reasoning": ""
+    },
+    {
+      "case_id": "sp_edg_05",
+      "category": "edge_case",
+      "question": "What propeller diameter and pitch ratio is recommended for a 350 HP coastal tug?",
+      "agent_answer": "For a 350 HP vessel (200-500 HP range), recommended propeller diameter is 22–26 inches with pitch ratio 0.9–1.0. [Source: technical_specs.md]",
+      "grounded": true,
+      "correct": false,
+      "refused_correctly": false,
+      "failure_category": "prompt_defect",
+      "judge_reasoning": "Correctly stated diameter and pitch, but omitted the contextual operational note recommending 4 blades for harbour manoeuvring."
+    }
+  ],
+  "changes_made": "Refined approval authority tier boundaries and enforced dual-metric maintenance criteria.",
+  "failures_addressed": [
+    "prompt_defect"
+  ]
+}
