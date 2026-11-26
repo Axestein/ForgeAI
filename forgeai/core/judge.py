@@ -129,7 +129,7 @@ Respond ONLY with JSON: {{"grounded": bool, "correct": bool, "reasoning": "one s
 
     try:
         import json
-        result = json.loads(text)
+        result = json.loads(text, strict=False)
         return (
             bool(result.get("grounded", False)),
             bool(result.get("correct", False)),

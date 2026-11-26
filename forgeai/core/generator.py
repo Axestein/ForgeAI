@@ -31,7 +31,7 @@ def _extract_json(text: str):
     text = text.strip()
     text = re.sub(r"^```(?:json)?\s*", "", text)
     text = re.sub(r"\s*```$", "", text)
-    return json.loads(text)
+    return json.loads(text, strict=False)
 
 
 def _select_tools(req: RequirementsDoc) -> List[str]:
@@ -211,7 +211,7 @@ def run_generator(
 
     if output_path:
         Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-        Path(output_path).write_text(best.model_dump_json(indent=2))
+        Path(output_path).write_text(best.model_dump_json(indent=2), encoding="utf-8")
         print(f"[Generator] Agent definition saved → {output_path}")
 
     return best, candidates

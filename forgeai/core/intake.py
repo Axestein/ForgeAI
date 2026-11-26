@@ -39,7 +39,7 @@ def _extract_json(text: str) -> dict | list:
     text = text.strip()
     text = re.sub(r"^```(?:json)?\s*", "", text)
     text = re.sub(r"\s*```$", "", text)
-    return json.loads(text)
+    return json.loads(text, strict=False)
 
 
 def _ask_clarifying_questions(brief: str, doc_summary: str) -> List[str]:
@@ -165,7 +165,7 @@ def run_intake(
     # Save to disk
     if output_path:
         Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-        Path(output_path).write_text(req.model_dump_json(indent=2))
+        Path(output_path).write_text(req.model_dump_json(indent=2), encoding="utf-8")
         print(f"[Intake] Requirements saved → {output_path}")
 
     return req

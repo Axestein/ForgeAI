@@ -1,14 +1,13 @@
 {
-  "agent_name": "hr_shore_policy_assistant",
+  "agent_name": "i_need_an_assistant",
   "cases": [
     {
-      "id": "hr_ans_01",
+      "id": "TC-001",
       "category": "answerable",
-      "question": "How many days of annual leave do shore staff get per year, and can any be carried forward?",
+      "question": "How many days of annual leave am I entitled to per calendar year, and at what rate does it accrue?",
       "expected_answer_facts": [
-        "24 days per calendar year",
-        "accrues at 2 days per month",
-        "maximum of 10 days can be carried forward"
+        "Shore staff are entitled to 24 days of annual leave per calendar year",
+        "Leave accrues at a rate of 2 days per month"
       ],
       "expected_sources": [
         "hr_policy_manual.md"
@@ -16,12 +15,12 @@
       "should_refuse": false
     },
     {
-      "id": "hr_ans_02",
+      "id": "TC-002",
       "category": "answerable",
-      "question": "When is a medical certificate required for sick leave?",
+      "question": "What is the maximum number of unused annual leave days that can be carried forward into the next calendar year?",
       "expected_answer_facts": [
-        "absences exceeding 3 consecutive days",
-        "registered physician certificate"
+        "Unused leave can be carried forward for a maximum of 10 days",
+        "Any balance exceeding 10 days will be forfeited on January 1st"
       ],
       "expected_sources": [
         "hr_policy_manual.md"
@@ -29,12 +28,13 @@
       "should_refuse": false
     },
     {
-      "id": "hr_ans_03",
+      "id": "TC-003",
       "category": "answerable",
-      "question": "What is the paternity leave entitlement and within what timeframe must it be taken?",
+      "question": "What is the approval authority process for submitting an annual leave request?",
       "expected_answer_facts": [
-        "4 weeks fully paid",
-        "within 6 months of birth or adoption"
+        "Line manager for up to 5 days",
+        "Department Head for 6 to 14 days",
+        "HR Director for 15 days or more"
       ],
       "expected_sources": [
         "hr_policy_manual.md"
@@ -42,12 +42,12 @@
       "should_refuse": false
     },
     {
-      "id": "hr_ans_04",
+      "id": "TC-004",
       "category": "answerable",
-      "question": "What is the daily per diem for domestic travel to metro cities?",
+      "question": "How many paid sick days do employees get per year, and when is a medical certificate mandatory?",
       "expected_answer_facts": [
-        "₹1,500 per day",
-        "Mumbai, Delhi, Chennai, Kolkata, Bengaluru, Hyderabad"
+        "Employees are entitled to 12 days of paid sick leave per year",
+        "A medical certificate is mandatory for absences exceeding 3 consecutive days"
       ],
       "expected_sources": [
         "hr_policy_manual.md"
@@ -55,11 +55,13 @@
       "should_refuse": false
     },
     {
-      "id": "hr_ans_05",
+      "id": "TC-005",
       "category": "answerable",
-      "question": "Within how many days must travel expense claims be submitted?",
+      "question": "What are the provisions for maternity, paternity, and adoption leave?",
       "expected_answer_facts": [
-        "within 21 days of return from travel"
+        "Maternity leave is 26 weeks fully paid for primary caregivers",
+        "Paternity leave is 4 weeks fully paid to be taken within 6 months of birth or adoption",
+        "Adoption leave is the same as maternity leave for the primary adopting caregiver"
       ],
       "expected_sources": [
         "hr_policy_manual.md"
@@ -67,12 +69,176 @@
       "should_refuse": false
     },
     {
-      "id": "hr_ans_06",
+      "id": "TC-006",
       "category": "answerable",
-      "question": "Under what flight duration is business class air travel permitted?",
+      "question": "What are the rules and limits for emergency leave?",
       "expected_answer_facts": [
-        "flights exceeding 8 hours",
-        "or Director level and above"
+        "Up to 3 days per occurrence and maximum 6 days per year",
+        "For death or serious illness of an immediate family member",
+        "Documentation required within 5 working days"
+      ],
+      "expected_sources": [
+        "hr_policy_manual.md"
+      ],
+      "should_refuse": false
+    },
+    {
+      "id": "TC-007",
+      "category": "answerable",
+      "question": "What is the domestic per diem and hotel accommodation limit for metro cities?",
+      "expected_answer_facts": [
+        "Per diem for meals and incidentals is ₹1,500 per day for metro cities",
+        "Hotel accommodation actual cost up to ₹5,000 per night for metro cities"
+      ],
+      "expected_sources": [
+        "hr_policy_manual.md"
+      ],
+      "should_refuse": false
+    },
+    {
+      "id": "TC-008",
+      "category": "answerable",
+      "question": "What are the per diem rates for international travel across different regions?",
+      "expected_answer_facts": [
+        "USD 50 per day for Asia",
+        "USD 75 per day for Europe, Americas, and Australia"
+      ],
+      "expected_sources": [
+        "hr_policy_manual.md"
+      ],
+      "should_refuse": false
+    },
+    {
+      "id": "TC-009",
+      "category": "answerable",
+      "question": "What is the timeline and receipt threshold for expense submission after returning from travel?",
+      "expected_answer_facts": [
+        "Expenses must be submitted within 21 days of return from travel",
+        "All expenses above ₹500 (domestic) or USD 20 (international) require original receipts"
+      ],
+      "expected_sources": [
+        "hr_policy_manual.md"
+      ],
+      "should_refuse": false
+    },
+    {
+      "id": "TC-010",
+      "category": "answerable",
+      "question": "Which items are strictly non-reimbursable during business travel?",
+      "expected_answer_facts": [
+        "Personal entertainment and alcohol",
+        "Minibar charges and fines/penalties",
+        "Personal travel add-ons and upgrades"
+      ],
+      "expected_sources": [
+        "hr_policy_manual.md"
+      ],
+      "should_refuse": false
+    },
+    {
+      "id": "TC-011",
+      "category": "answerable",
+      "question": "What are the first steps to raise a travel request according to the travel procedures?",
+      "expected_answer_facts": [
+        "Log into the HR/Finance Portal at portal.acmecorp.internal",
+        "Navigate to Travel -> New Request",
+        "Fill in destination, travel dates, purpose, and estimated cost",
+        "Manager approval is required before booking"
+      ],
+      "expected_sources": [
+        "travel_procedures.md"
+      ],
+      "should_refuse": false
+    },
+    {
+      "id": "TC-012",
+      "category": "answerable",
+      "question": "What is Acme's preferred travel management company and how can they be contacted?",
+      "expected_answer_facts": [
+        "TravelSmart is Acme's approved travel management company",
+        "Contact email is travelsmart@acmecorp.internal",
+        "Contact phone number is +91-22-4444-5555"
+      ],
+      "expected_sources": [
+        "travel_procedures.md"
+      ],
+      "should_refuse": false
+    },
+    {
+      "id": "TC-013",
+      "category": "answerable",
+      "question": "What are the preferred hotels and contract codes for Mumbai and Bengaluru?",
+      "expected_answer_facts": [
+        "Mumbai preferred hotel is The Trident, Nariman Point with max rate ₹5,000/night and contract code ACM-MUM-01",
+        "Bengaluru preferred hotel is Marriott, Whitefield with max rate ₹5,000/night and contract code ACM-BLR-01"
+      ],
+      "expected_sources": [
+        "travel_procedures.md"
+      ],
+      "should_refuse": false
+    },
+    {
+      "id": "TC-014",
+      "category": "answerable",
+      "question": "What is the policy regarding cancelled and changed travel bookings?",
+      "expected_answer_facts": [
+        "Cancellations due to company reasons are fully reimbursed including cancellation fees",
+        "Cancellations due to personal reasons require the employee to bear all cancellation/change fees",
+        "Approval is required from HR to categorize a cancellation as company-initiated"
+      ],
+      "expected_sources": [
+        "travel_procedures.md"
+      ],
+      "should_refuse": false
+    },
+    {
+      "id": "TC-015",
+      "category": "out_of_scope",
+      "question": "What are the emergency cargo discharging procedures when a container ship is facing heavy weather off the coast?",
+      "expected_answer_facts": [],
+      "expected_sources": [],
+      "should_refuse": true
+    },
+    {
+      "id": "TC-016",
+      "category": "out_of_scope",
+      "question": "How do I calculate the ballast water exchange rate for our vessel's main engine systems?",
+      "expected_answer_facts": [],
+      "expected_sources": [],
+      "should_refuse": true
+    },
+    {
+      "id": "TC-017",
+      "category": "out_of_scope",
+      "question": "What is the quarterly financial revenue forecast for Acme Corp's freight division?",
+      "expected_answer_facts": [],
+      "expected_sources": [],
+      "should_refuse": true
+    },
+    {
+      "id": "TC-018",
+      "category": "out_of_scope",
+      "question": "Can you configure the navigation software settings on the bridge workstation?",
+      "expected_answer_facts": [],
+      "expected_sources": [],
+      "should_refuse": true
+    },
+    {
+      "id": "TC-019",
+      "category": "out_of_scope",
+      "question": "What are the port clearance requirements and customs declaration steps for hazardous cargo?",
+      "expected_answer_facts": [],
+      "expected_sources": [],
+      "should_refuse": true
+    },
+    {
+      "id": "TC-020",
+      "category": "edge_case",
+      "question": "I need to book a domestic flight that is over 5 hours long. What class am I allowed to fly, how far in advance should I book, and what is the approval process required?",
+      "expected_answer_facts": [
+        "Flights over 5 hours permit Economy class, or Business class with approval",
+        "Max advance booking time is 30 days",
+        "Manager approval is required before booking travel via the portal"
       ],
       "expected_sources": [
         "hr_policy_manual.md",
@@ -81,36 +247,13 @@
       "should_refuse": false
     },
     {
-      "id": "hr_ans_07",
-      "category": "answerable",
-      "question": "What is the maximum nominal gift value an employee is permitted to accept?",
+      "id": "TC-021",
+      "category": "edge_case",
+      "question": "If I am planning international travel to Europe for a project lasting a week, what are my business class air travel permissions and hotel accommodation spending limits?",
       "expected_answer_facts": [
-        "nominal value up to ₹2,000"
-      ],
-      "expected_sources": [
-        "hr_policy_manual.md"
-      ],
-      "should_refuse": false
-    },
-    {
-      "id": "hr_ans_08",
-      "category": "answerable",
-      "question": "What is the corporate rate and contract code for Courtyard by Marriott in Delhi?",
-      "expected_answer_facts": [
-        "₹4,800 per night",
-        "ACM-DEL-01"
-      ],
-      "expected_sources": [
-        "travel_procedures.md"
-      ],
-      "should_refuse": false
-    },
-    {
-      "id": "hr_ans_09",
-      "category": "answerable",
-      "question": "What rate per kilometer is reimbursed for using a personal vehicle on business?",
-      "expected_answer_facts": [
-        "₹8 per km"
+        "Business class air travel is permitted for flights exceeding 8 hours in duration or for employees at Director level and above",
+        "Employees must select the lowest available Business class fare",
+        "Hotel accommodation limit for Europe/Americas/Australia is USD 200 per night"
       ],
       "expected_sources": [
         "hr_policy_manual.md",
@@ -119,144 +262,12 @@
       "should_refuse": false
     },
     {
-      "id": "hr_ans_10",
-      "category": "answerable",
-      "question": "How long is the maternity leave for primary caregivers?",
-      "expected_answer_facts": [
-        "26 weeks fully paid"
-      ],
-      "expected_sources": [
-        "hr_policy_manual.md"
-      ],
-      "should_refuse": false
-    },
-    {
-      "id": "hr_ans_11",
-      "category": "answerable",
-      "question": "What is the performance bonus range for employees rated Exceeds Expectations or Exceptional?",
-      "expected_answer_facts": [
-        "5–15% of annual salary",
-        "rated 4 or 5",
-        "paid in February"
-      ],
-      "expected_sources": [
-        "hr_policy_manual.md"
-      ],
-      "should_refuse": false
-    },
-    {
-      "id": "hr_ans_12",
-      "category": "answerable",
-      "question": "How much health insurance hospitalization coverage is provided for the employee?",
-      "expected_answer_facts": [
-        "up to ₹5 lakh per year for employee",
-        "₹3 lakh for dependents"
-      ],
-      "expected_sources": [
-        "hr_policy_manual.md"
-      ],
-      "should_refuse": false
-    },
-    {
-      "id": "hr_ref_01",
-      "category": "out_of_scope",
-      "question": "What is the minimum rest hour requirement for deck officers under STCW on container vessels?",
-      "expected_answer_facts": [],
-      "expected_sources": [],
-      "should_refuse": true
-    },
-    {
-      "id": "hr_ref_02",
-      "category": "out_of_scope",
-      "question": "How do we calculate freight demurrage charges for delayed port discharge?",
-      "expected_answer_facts": [],
-      "expected_sources": [],
-      "should_refuse": true
-    },
-    {
-      "id": "hr_ref_03",
-      "category": "out_of_scope",
-      "question": "Can you show me the wiring diagram for the bridge radar transponder?",
-      "expected_answer_facts": [],
-      "expected_sources": [],
-      "should_refuse": true
-    },
-    {
-      "id": "hr_ref_04",
-      "category": "out_of_scope",
-      "question": "What bunker fuel grade is mandatory when sailing in Baltic emission control areas?",
-      "expected_answer_facts": [],
-      "expected_sources": [],
-      "should_refuse": true
-    },
-    {
-      "id": "hr_ref_05",
-      "category": "out_of_scope",
-      "question": "What is the seafarer compensation matrix for deep-sea chief engineers?",
-      "expected_answer_facts": [],
-      "expected_sources": [],
-      "should_refuse": true
-    },
-    {
-      "id": "hr_edg_01",
+      "id": "TC-022",
       "category": "edge_case",
-      "question": "If I get sick during my scheduled annual leave, what happens to my vacation balance?",
+      "question": "How many days in advance do I need to submit an application for taking 4 days of annual leave, and who approves it?",
       "expected_answer_facts": [
-        "reclassified as sick leave",
-        "annual leave restored",
-        "medical certificate required"
-      ],
-      "expected_sources": [
-        "hr_policy_manual.md"
-      ],
-      "should_refuse": false
-    },
-    {
-      "id": "hr_edg_02",
-      "category": "edge_case",
-      "question": "Who pays for flight cancellation fees if a client meeting gets rescheduled by management?",
-      "expected_answer_facts": [
-        "fully reimbursed by company including fees",
-        "company-initiated reason"
-      ],
-      "expected_sources": [
-        "travel_procedures.md"
-      ],
-      "should_refuse": false
-    },
-    {
-      "id": "hr_edg_03",
-      "category": "edge_case",
-      "question": "Can a newly joined shore employee apply for work-from-home during their second month?",
-      "expected_answer_facts": [
-        "flexible working permitted after 6 months employment",
-        "manager discretion"
-      ],
-      "expected_sources": [
-        "hr_policy_manual.md"
-      ],
-      "should_refuse": false
-    },
-    {
-      "id": "hr_edg_04",
-      "category": "edge_case",
-      "question": "Are alcoholic drinks during a business dinner with partners reimbursable?",
-      "expected_answer_facts": [
-        "alcohol is explicitly non-reimbursable"
-      ],
-      "expected_sources": [
-        "hr_policy_manual.md"
-      ],
-      "should_refuse": false
-    },
-    {
-      "id": "hr_edg_05",
-      "category": "edge_case",
-      "question": "What should I do if a supplier gives me a holiday gift basket worth ₹5,000?",
-      "expected_answer_facts": [
-        "must declare to HR",
-        "above ₹2,000 threshold",
-        "must be returned or donated"
+        "Leave requests exceeding 3 days require at least 15 working days advance submission",
+        "Approval authority for 6 to 14 days is the Department Head"
       ],
       "expected_sources": [
         "hr_policy_manual.md"

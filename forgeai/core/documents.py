@@ -69,7 +69,7 @@ def _load_pdf(fpath: Path, source: str) -> Document:
         content = "\n\n".join(pages)
     except ImportError:
         # Fallback: read raw bytes as text (lossy but functional)
-        content = fpath.read_text(errors="replace")
+        content = fpath.read_text(encoding="utf-8", errors="replace")
     return Document(source=source, content=content, doc_type="pdf")
 
 

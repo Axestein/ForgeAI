@@ -84,7 +84,7 @@ def run_pipeline(
         # Save all candidates
         for i, c in enumerate(candidates, 1):
             cand_path = out / f"candidate_v{i}.json"
-            cand_path.write_text(c.model_dump_json(indent=2))
+            cand_path.write_text(c.model_dump_json(indent=2), encoding="utf-8")
         console.print(f"[dim]Saved {len(candidates)} tournament candidates.[/dim]")
 
     # Budget check
@@ -124,7 +124,7 @@ def run_pipeline(
 
     # Save final agent
     final_agent_path = out / "agent_final.json"
-    final_agent_path.write_text(final_agent.model_dump_json(indent=2))
+    final_agent_path.write_text(final_agent.model_dump_json(indent=2), encoding="utf-8")
 
     # ── Stage 6: Report ───────────────────────────────────────────────────
     console.rule("[bold]Stage 6: Reporting[/bold]")

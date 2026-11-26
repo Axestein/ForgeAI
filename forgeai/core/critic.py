@@ -102,7 +102,7 @@ Return JSON only:
     text = re.sub(r"^```(?:json)?\s*", "", text)
     text = re.sub(r"\s*```$", "", text)
 
-    result = json.loads(text)
+    result = json.loads(text, strict=False)
 
     # Build new agent version
     new_agent = agent.model_copy(deep=True)
@@ -150,7 +150,7 @@ def run_critic_optimizer(
         if output_dir:
             iter_path = Path(output_dir) / f"iteration_{iteration}.json"
             iter_path.parent.mkdir(parents=True, exist_ok=True)
-            iter_path.write_text(iter_result.model_dump_json(indent=2))
+            iter_path.write_text(iter_result.model_dump_json(indent=2), encoding="utf-8")
             print(f"[Critic] Iteration {iteration} saved → {iter_path}")
 
         # Perfect score or last iteration → stop
@@ -188,7 +188,7 @@ def run_critic_optimizer(
             # Save updated agent definition
             if output_dir:
                 agent_path = Path(output_dir) / f"agent_v{new_agent.version}.json"
-                agent_path.write_text(new_agent.model_dump_json(indent=2))
+                agent_path.write_text(new_agent.model_dump_json(indent=2), encoding="utf-8")
                 print(f"[Critic] Updated agent saved → {agent_path}")
 
         except Exception as e:

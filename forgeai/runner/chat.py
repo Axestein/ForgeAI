@@ -23,7 +23,7 @@ def load_agent(path: str):
     sys.path.insert(0, str(Path(__file__).parent.parent.parent))
     from forgeai.core.models import AgentDefinition
 
-    data = json.loads(Path(path).read_text())
+    data = json.loads(Path(path).read_text(encoding="utf-8"))
     return AgentDefinition(**data)
 
 

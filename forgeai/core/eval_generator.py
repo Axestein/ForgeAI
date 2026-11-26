@@ -93,7 +93,7 @@ def _generate_eval_batch(
     text = re.sub(r"^```(?:json)?\s*", "", text)
     text = re.sub(r"\s*```$", "", text)
 
-    raw_cases = json.loads(text)
+    raw_cases = json.loads(text, strict=False)
     cases = []
     seen_ids = set()
     for rc in raw_cases:
@@ -148,7 +148,7 @@ def run_eval_generator(
 
     if output_path:
         Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-        Path(output_path).write_text(eval_set.model_dump_json(indent=2))
+        Path(output_path).write_text(eval_set.model_dump_json(indent=2), encoding="utf-8")
         print(f"[EvalGen] Eval set ({len(cases)} cases) saved → {output_path}")
 
     return eval_set

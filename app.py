@@ -146,7 +146,7 @@ if page == "🏭 Build an Agent":
                     report_md_path = Path(result["artifacts"]["final_report_md"])
                     if report_md_path.exists():
                         with st.expander("📊 Final Report", expanded=True):
-                            st.markdown(report_md_path.read_text())
+                            st.markdown(report_md_path.read_text(encoding="utf-8"))
 
                     st.info(f"All artifacts saved to: `{output_dir}`")
 
@@ -198,7 +198,7 @@ elif page == "💬 Chat with Agent":
                 agent_path = run_path / "agent_final.json"
                 if not agent_path.exists():
                     agent_path = run_path / "agent_definition.json"
-                agent_data = json.loads(agent_path.read_text())
+                agent_data = json.loads(agent_path.read_text(encoding="utf-8"))
                 st.session_state.chat_agent = AgentDefinition(**agent_data)
 
                 # Load docs from run folder (use a placeholder if none)
@@ -278,7 +278,7 @@ elif page == "📊 View Reports":
             # Report markdown
             report_md = run_path / "final_report.md"
             if report_md.exists():
-                st.markdown(report_md.read_text())
+                st.markdown(report_md.read_text(encoding="utf-8"))
             else:
                 st.warning("No final_report.md found for this run.")
 
@@ -288,7 +288,7 @@ elif page == "📊 View Reports":
                 st.subheader("Iteration Details")
                 iter_files = sorted(iter_dir.glob("iteration_*.json"))
                 for f in iter_files:
-                    iter_data = json.loads(f.read_text())
+                    iter_data = json.loads(f.read_text(encoding="utf-8"))
                     with st.expander(f"Iteration {iter_data['iteration']} – Score: {iter_data['score']:.1%}"):
                         st.write(f"**Passed:** {iter_data['passed']}/{iter_data['total']}")
                         st.write(f"**Changes:** {iter_data.get('changes_made', '(initial run)')}")
@@ -307,4 +307,4 @@ elif page == "📊 View Reports":
                 for f in sorted(run_path.rglob("*.json")):
                     rel = f.relative_to(run_path)
                     if st.button(f"📄 {rel}", key=str(rel)):
-                        st.code(f.read_text(), language="json")
+                        st.code(f.read_text(encoding="utf-8"), language="json")

@@ -103,13 +103,13 @@ def run_reporter(
 
     if output_path:
         Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-        Path(output_path).write_text(report.model_dump_json(indent=2))
+        Path(output_path).write_text(report.model_dump_json(indent=2), encoding="utf-8")
 
     # Also write human-readable markdown
     md_path = output_path.replace(".json", ".md") if output_path else None
     md = _render_markdown(report, results)
     if md_path:
-        Path(md_path).write_text(md)
+        Path(md_path).write_text(md, encoding="utf-8")
         print(f"[Reporter] Report saved → {md_path}")
 
     return report
