@@ -6,6 +6,31 @@ ForgeAI takes a one-paragraph brief and a folder of documents and autonomously p
 
 ---
 
+## 📹 Full Demo Walkthrough
+
+> Watch ForgeAI build, test, and self-improve a real AI agent from scratch — end to end, unattended.
+
+<p align="center">
+  <a href="https://drive.google.com/file/d/1cRvHBNR6sWwakfsBkoLoDqwka1plTjg3/view?usp=sharing">
+    <img src="https://github.com/user-attachments/assets/5684ccfe-51ae-4bc3-9b30-8debfbaf6081" alt="Watch ForgeAI Demo" width="750">
+  </a>
+  <br>
+  <strong>▶️ Click the image above to watch the full walkthrough on Google Drive OR</strong>
+<a href="https://drive.google.com/file/d/1cRvHBNR6sWwakfsBkoLoDqwka1plTjg3/view?usp=sharing" target="_blank">click here to watch the full walkthrough on Google Drive</a></strong>
+</p>
+
+| **Step 1 — The Factory (Terminal)** |
+|:---|
+| **Command:** `python demos/hr_assistant/run_demo.py`<br><br>• **Groundability Guard:** Inspects documents first and flags gaps before hallucinating.<br>• **Tool Registry:** Selects only `current_date` — strictly rejecting `weather_api` and `csv_lookup` (zero tool defect).<br>• **Eval Generator:** Auto-creates 22 diverse test cases from documents.<br>• **Critic-Optimizer Loop:** Runs 3 iterations (72.7% → 86.4% → **90.9%**), logging every targeted prompt fix. |
+
+| **Step 2 — The CLI Chat Runner (Terminal)** |
+|:---|
+| **Command:** `python -m forgeai.runner.chat --agent runs/hr_assistant/agent_final.json --docs demos/hr_assistant/docs`<br><br>• **In-scope:** *"How many days of annual leave do shore staff get?"* → Returns grounded, cited answer.<br>• **Out-of-scope:** *"What is the ballast water exchange rate?"* → Clean deterministic refusal (*"I'm sorry, that topic is outside my scope."*). |
+
+| **Step 3 — The Streamlit Web UI (Browser)** |
+|:---|
+| **Command:** `python -m streamlit run app.py`<br><br>• **📊 View Reports:** Displays per-iteration scorecards and honest quality assessment.<br>• **💬 Chat with Agent:** Interactive browser chat with the produced declarative agent.<br>• **🏭 Build an Agent:** Upload documents and generate agents autonomously from the browser. |
+
 ## Demo Results (Committed Artifacts)
 
 | Demo | Domain | Final Score | Baseline | Improvement | Iterations |
