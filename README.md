@@ -1,8 +1,7 @@
 # ForgeAI – The Agent That Builds Agents
 
-> **OceanAI · Jr. GenAI Engineer Campus Assignment**
->
-> ForgeAI takes a one-paragraph brief and a folder of documents and autonomously produces a **working, tested AI agent** — with system prompt, retrieval configuration, tool selection, an auto-generated evaluation set, and iterative self-improvement — then hands back a quality report with honest scoring.
+**OceanAI · Jr. GenAI Engineer Campus Assignment - Aditya Kumar Singh (RA2311003010916)**
+ ForgeAI takes a one-paragraph brief and a folder of documents and autonomously produces a **working, tested AI agent** — with system prompt, retrieval configuration, tool selection, an auto-generated evaluation set, and iterative self-improvement — then hands back a quality report with honest scoring.
 
 ---
 
@@ -13,7 +12,7 @@
 | HR Shore Policy Assistant | HR & Travel Policy | **90.9%** (20/22) | 72.7% | +18.2% | 3 |
 | Ship Spares Procurement | Maritime Parts & Procurement | **90.9%** (20/22) | 68.2% | +22.7% | 3 |
 
-> Both runs committed in full under `runs/hr_assistant/` and `runs/ship_spares/` including requirements documents, agent definitions, generated eval sets, iteration logs, and final scorecards.
+Both runs committed in full under `runs/hr_assistant/` and `runs/ship_spares/` including requirements documents, agent definitions, generated eval sets, iteration logs, and final scorecards.
 
 ---
 
