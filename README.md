@@ -1,7 +1,8 @@
 # ForgeAI – The Agent That Builds Agents
 
 **OceanAI · Jr. GenAI Engineer Campus Assignment - Aditya Kumar Singh (RA2311003010916)**
- ForgeAI takes a one-paragraph brief and a folder of documents and autonomously produces a **working, tested AI agent** — with system prompt, retrieval configuration, tool selection, an auto-generated evaluation set, and iterative self-improvement — then hands back a quality report with honest scoring.
+
+ForgeAI takes a one-paragraph brief and a folder of documents and autonomously produces a **working, tested AI agent** — with system prompt, retrieval configuration, tool selection, an auto-generated evaluation set, and iterative self-improvement — then hands back a quality report with honest scoring.
 
 ---
 
@@ -92,7 +93,7 @@ GOOGLE_API_KEY=AIza...
 ANTHROPIC_API_KEY=sk-ant-...
 
 LLM_PROVIDER=google          # openai | google | anthropic
-LLM_MODEL=gemini-1.5-flash   # leave blank for provider default
+LLM_MODEL=gemini-3.5-flash   # leave blank for provider default
 TOKEN_BUDGET=200000
 ```
 
